@@ -1,0 +1,80 @@
+/**index.wxss**/
+page{
+  background-color: #f8f7f7;
+}
+.index-body {
+  height: 100%;
+  padding: 0;
+  box-sizing: border-box; 
+  font-size: 28rpx;
+} 
+
+/*轮播*/
+swiper.swiper {
+  height: 330rpx;
+  margin-bottom: 16rpx;
+}
+.swiper-item {
+    display: block;
+    height: 100%;
+}
+.slide-image {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+/*菜单栏*/
+.index-nav{
+  display: flex; 
+  background-color: #fff;
+  padding-top: 26rpx;
+  margin-bottom: 16rpx;
+}
+.nav-item{
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 2.6;
+}
+.nav-item .nav-icon{
+  display: block;
+  width: 72rpx;
+  margin: 0 auto;
+}
+
+.index-section{
+  background-color: #fff;
+  padding: 20rpx 0;
+  margin-top: 20rpx;
+}
+.section-title{
+  padding: 0 16rpx;
+  font-size: 1.5em;
+  color: #66cc33;
+  border-left: 10rpx solid #66cc33;
+  margin-bottom: 20rpx;
+}
+.section-content{
+  display: flex;
+  border-top:1px solid #ddd;
+  line-height: 1.5;
+}
+.section-item{
+  flex: 1;
+  padding: 20rpx;
+}
+.section-img{
+  width: 100%;
+}
+.section-name{
+  display: block;
+  text-align: center;
+}
+.section-price{
+  display: block;
+  text-align: center;
+  color: #ff6600;
+  font-weight: 700;
+}

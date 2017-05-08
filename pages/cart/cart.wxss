@@ -1,0 +1,16 @@
+/* pages/cart/cart.wxss */
+page{
+  background-color: #f8f7f7;
+  height: 100%;
+}
+.cart-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 100%;
+}
+.cart-icon{
+    width: 3em;
+}

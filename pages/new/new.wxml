@@ -1,0 +1,41 @@
+<!--pages/new/new.wxml-->
+<view class="new-banner">
+    <image src="/images/new.jpg" class="new-banner-img" mode="widthFix"></image>
+</view>
+<view class="goods-content">
+    <view class="goods-item">
+        <image src="/images/goods1.jpg" class="goods-img" mode="widthFix"/>
+        <view class="goods-info">
+            <text class="goods-name">牛轧糖买三盒立减15元</text>
+            <text class="goods-price">￥29.9</text>
+        </view>
+    </view>
+    <view class="goods-item">
+        <image src="/images/goods2.jpg" class="goods-img" mode="widthFix"/>
+        <view class="goods-info">
+            <text class="goods-name">凤梨酥新品上市，尝新价29.9，现在买三盒立减15元</text>
+            <text class="goods-price">￥29.9</text>
+        </view>
+    </view>
+    <view class="goods-item">
+        <image src="/images/goods1.jpg" class="goods-img" mode="widthFix"/>
+        <view class="goods-info">
+            <text class="goods-name">牛轧糖买三盒立减15元</text>
+            <text class="goods-price">￥29.9</text>
+        </view>
+    </view>
+    <view class="goods-item">
+        <image src="/images/goods2.jpg" class="goods-img" mode="widthFix"/>
+        <view class="goods-info">
+            <text class="goods-name">凤梨酥新品上市,买三盒立减15元</text>
+            <text class="goods-price">￥29.9</text>
+        </view>
+    </view>
+    <view class="goods-item">
+        <image src="/images/goods1.jpg" class="goods-img" mode="widthFix"/>
+        <view class="goods-info">
+            <text class="goods-name">牛轧糖买三盒立减15元</text>
+            <text class="goods-price">￥29.9</text>
+        </view>
+    </view>
+</view>

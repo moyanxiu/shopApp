@@ -1,0 +1,36 @@
+/* pages/user/user.wxss */
+page{
+    background-color: #f8f7f7;
+    height: 100%;
+}
+.userinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: #fff;
+}
+.userinfo-avatar{
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+.userinfo-list{
+    margin-top: 10px;
+    background-color: #fff;
+    line-height: 2;
+}
+.userinfo-item{
+    display: flex;
+    padding: 0 1em;
+}
+.userinfo-item:not(:last-child){
+    border-bottom: 1px solid #ddd;
+}
+.title{
+    flex: 1;
+}

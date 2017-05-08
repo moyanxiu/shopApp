@@ -1,0 +1,5 @@
+<!--pages/cart/cart.wxml-->
+<view class="cart-content">
+    <image src="/images/cart_null.png" class="cart-icon" mode="widthFix"></image>
+    <text>购物车空空如也</text>
+</view>
