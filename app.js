@@ -25,6 +25,7 @@ App({
     }
   },
   globalData:{
-    userInfo:null
+    userInfo:null,
+    serverURL:'http://rapapi.org/mockjsdata/20680/'
   }
 })

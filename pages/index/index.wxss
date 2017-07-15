@@ -58,11 +58,14 @@ swiper.swiper {
 }
 .section-content{
   display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
   border-top:1px solid #ddd;
   line-height: 1.5;
 }
 .section-item{
-  flex: 1;
+  flex: 0 0 50%;
+  box-sizing: border-box;
   padding: 20rpx;
 }
 .section-img{
@@ -70,7 +73,8 @@ swiper.swiper {
 }
 .section-name{
   display: block;
-  text-align: center;
+  height: 1.5em;
+  overflow: hidden;
 }
 .section-price{
   display: block;

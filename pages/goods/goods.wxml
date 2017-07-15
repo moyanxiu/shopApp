@@ -1,0 +1,71 @@
+<!--index.wxml-->
+<view class="goods-view">
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="3000" duration="1000" indicator-color="rgba(0, 0, 0, 0.1)" indicator-active-color="rgba(0, 0, 0, 0.6)">
+    <block wx:for="{{goodsInfo.goods_imgs}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="goods_msg">
+    <text class="goods_name">{{goodsInfo.goods_name}}</text>
+    <text class="goods_price">{{goodsInfo.goods_price}}</text>
+  </view>
+  <view class="tab">
+    <view class="tab-item {{currentTab==0?'tab-active' : ''}}" data-current="0" bindtap="tab">商品详情</view>
+    <view class="tab-item {{currentTab==1?'tab-active' : ''}}" data-current="1" bindtap="tab">参数</view>
+  </view>
+  <view class="details" wx:if="{{currentTab==0}}">
+    <block wx:for="{{goodsInfo.goods_detail_img}}">
+      <image class="details-img" src="{{item}}" mode="widthFix"></image>
+    </block>
+  </view>
+  <view class="parameter" wx:if="{{currentTab==1}}">
+    <view wx:if="{{!goodsInfo.parameter||goodsInfo.parameter.length==0}}" class="no-parameter">该商品没有参数</view>
+    <view class="parameter-data">
+      <view class="parameter-item" wx:for="{{goodsInfo.parameter}}">
+        <view class="parameter_name">{{item.parameter_name}}</view>
+        <view class="parameter_val">{{item.parameter_val}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="footer">
+    <button class="add-cart" size="mini" bindtap="addCart">加入购物车</button>
+    <button class="buy" size="mini" bindtap="buy">立即购买</button>
+  </view>
+  <view wx:if="{{showSpecMenu}}" class="spec-menu-bg" bindtap="hideSpecMenu"></view>
+  <view wx:if="{{showSpecMenu}}" class="spec-menu">
+    <view class="spec-menu-top">
+      <view class="spec-pic-content">
+        <image src="/images/goods1.jpg" class="spec-pic"></image>
+      </view>
+      <button class="spec-menu-close" bindtap="hideSpecMenu">
+        <icon type="clear" color="#ddd"/>
+      </button>
+      <view class="spec-summary">
+        <view class="spec-price">￥{{goodsInfo.goods_price}}</view>
+        <view class="spec-selected">请选择规格</view>
+        <view class="spec-selected">{{specName}}</view>
+      </view>
+    </view>
+    <view class="spec-menu-middle">
+      <view class="spec-list" wx:for="{{goodsInfo.sku}}">
+       <view class="spec-className">{{item.pName}}</view>
+       <view class="spec-classItem">
+        <label wx:for="{{item.pList}}">{{item}}</label>
+       </view>
+      </view>
+      <view class="quantity-wrapper">
+        <text>购买数量</text>
+        <view class="quantity-btn">
+          <button>-</button>
+          <input type="text" value="1"/>
+          <button>+</button>
+        </view>
+      </view>
+    </view>
+    <view class="spec-menu-bottom">
+      <button>确定</button>
+    </view>
+  </view>
+</view>

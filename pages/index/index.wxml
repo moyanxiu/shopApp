@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="index-body">
-  <swiper class="swiper" indicator-dots="{{indicatorDots}}"autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"    indicator-color="#e8e8e8" indicator-active-color="#a9dd3c">
-    <block wx:for="{{imgUrls}}">
+  <swiper class="swiper" autoplay="true" interval="5000" duration="1000" indicator-color="#e8e8e8" indicator-active-color="#a9dd3c">
+    <block wx:for="{{carousel}}">
       <swiper-item>
         <image src="{{item}}" class="slide-image"/>
       </swiper-item>
@@ -12,41 +12,30 @@
     <block wx:for="{{navs}}">
       <view class="nav-item">
         <image src="{{item.icon}}" class="nav-icon" mode="widthFix"/>
-        <text>{{item.title}}</text>
+        <text>{{item.name}}</text>
       </view>
     </block>
   </view>
 
   <view class="index-section">
-    <view class="section-title">热销专区</view>
+    <view class="section-title">新品专区</view>
     <view class="section-content">
-      <view class="section-item">
-        <image src="/images/goods1.jpg" class="section-img" mode="widthFix"/>
-        <text class="section-name">牛轧糖买三盒立减15元</text>
-        <text class="section-price">￥29.9</text>
-      </view>
-      <view class="section-item">
-        <image src="/images/goods2.jpg" class="section-img" mode="widthFix"/>
-        <text class="section-name">牛轧糖买三盒立减15元</text>
-        <text class="section-price">￥29.9</text>
-      </view>
+      <navigator url="/pages/goods/goods?id={{item.id}}" class="section-item" wx:for="{{newGoods}}">
+        <image src="{{item.thumbnail}}" class="section-img" mode="widthFix"/>
+        <text class="section-name">{{item.goods_name}}</text>
+        <text class="section-price">{{item.goods_price}}</text>
+      </navigator>
     </view>
   </view>
 
   <view class="index-section">
     <view class="section-title">热销专区</view>
     <view class="section-content">
-      <view class="section-item">
-        <image src="/images/goods1.jpg" class="section-img" mode="widthFix"/>
-        <text class="section-name">牛轧糖买三盒立减15元</text>
-        <text class="section-price">￥29.9</text>
-      </view>
-      <view class="section-item">
-        <image src="/images/goods2.jpg" class="section-img" mode="widthFix"/>
-        <text class="section-name">牛轧糖买三盒立减15元</text>
-        <text class="section-price">￥29.9</text>
-      </view>
+      <navigator url="/pages/goods/goods?id={{item.id}}" class="section-item" wx:for="{{hotGoods}}">
+        <image src="{{item.thumbnail}}" class="section-img" mode="widthFix"/>
+        <text class="section-name">{{item.goods_name}}</text>
+        <text class="section-price">{{item.goods_price}}</text>
+      </navigator>
     </view>
-  </view>
-  
+  </view>  
 </view>
