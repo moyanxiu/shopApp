@@ -12,17 +12,17 @@
     "list": [{
       "pagePath": "pages/index/index",
       "text": "首页",
-      "iconPath": "images/home_light.png",
-      "selectedIconPath": "images/home_fill_light.png"
+      "iconPath": "images/home.png",
+      "selectedIconPath": "images/home_fill.png"
     },{
       "pagePath": "pages/new/new",
       "text": "新品",
-      "iconPath": "images/goods_new_light.png",
-      "selectedIconPath": "images/goods_new_fill_light.png"
+      "iconPath": "images/goods_new.png",
+      "selectedIconPath": "images/goods_new_fill.png"
     },{
       "pagePath": "pages/cart/cart",
       "text": "购物车",
-      "iconPath": "images/cart_light.png",
+      "iconPath": "images/cart.png",
       "selectedIconPath": "images/cart_fill.png"
     },{
       "pagePath": "pages/user/user",
