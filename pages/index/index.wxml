@@ -20,7 +20,7 @@
   <view class="index-section">
     <view class="section-title">新品专区</view>
     <view class="section-content">
-      <navigator url="/pages/goods/goods?id={{item.id}}" class="section-item" wx:for="{{newGoods}}">
+      <navigator url="/pages/goods/goods?id={{item.goods_id}}" class="section-item" wx:for="{{newGoods}}">
         <image src="{{item.thumbnail}}" class="section-img" mode="widthFix"/>
         <text class="section-name">{{item.goods_name}}</text>
         <text class="section-price">{{item.goods_price}}</text>
@@ -31,7 +31,7 @@
   <view class="index-section">
     <view class="section-title">热销专区</view>
     <view class="section-content">
-      <navigator url="/pages/goods/goods?id={{item.id}}" class="section-item" wx:for="{{hotGoods}}">
+      <navigator url="/pages/goods/goods?id={{item.goods_id}}" class="section-item" wx:for="{{hotGoods}}">
         <image src="{{item.thumbnail}}" class="section-img" mode="widthFix"/>
         <text class="section-name">{{item.goods_name}}</text>
         <text class="section-price">{{item.goods_price}}</text>

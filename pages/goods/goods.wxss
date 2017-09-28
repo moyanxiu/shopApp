@@ -45,8 +45,7 @@ swiper.swiper {
 .goods_price {
   display: block;
   font-size: 1.4em;
-  font-weight: 700;
-  color: red;
+  color: #ff6600;
   margin-top: 15rpx;
 }
 
@@ -69,8 +68,8 @@ swiper.swiper {
 }
 
 .tab-active {
-  color: red;
-  border-bottom: 2px solid red;
+  color: #ff6600;
+  border-bottom: 2px solid #ff6600;
 }
 
 .details {
@@ -139,11 +138,11 @@ swiper.swiper {
 }
 
 .add-cart {
-  background: #f60;
+  background: #ff6600;
 }
 
 .buy {
-  background: #f00;
+  background: #66cc33;
 }
 
 /*规格弹窗*/
